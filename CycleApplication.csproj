@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A995549-D06C-4877-B979-8151BAA3DEBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CycleApplication</RootNamespace>
+    <AssemblyName>CycleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>D:\ASE B\CycleAnalysisSoftware\Cycle\bin\Debug\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedMetric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdvancedMetric.Designer.cs">
+      <DependentUpon>AdvancedMetric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calender.Designer.cs">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATA VIEW.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DATA VIEW.Designer.cs">
+      <DependentUpon>DATA VIEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataparsing.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graph.Designer.cs">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntervalDetection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntervalDetection.Designer.cs">
+      <DependentUpon>IntervalDetection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="normalized power.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="normalized power.Designer.cs">
+      <DependentUpon>normalized power.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectedData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectedData.Designer.cs">
+      <DependentUpon>SelectedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectedInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectedInfo.Designer.cs">
+      <DependentUpon>SelectedInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="summary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="summary.Designer.cs">
+      <DependentUpon>summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="values.cs" />
+    <EmbeddedResource Include="AdvancedMetric.resx">
+      <DependentUpon>AdvancedMetric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calender.resx">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATA VIEW.resx">
+      <DependentUpon>DATA VIEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph.resx">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntervalDetection.resx">
+      <DependentUpon>IntervalDetection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="normalized power.resx">
+      <DependentUpon>normalized power.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SelectedData.resx">
+      <DependentUpon>SelectedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectedInfo.resx">
+      <DependentUpon>SelectedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="summary.resx">
+      <DependentUpon>summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
